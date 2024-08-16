@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-500 shadow">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-lg font-bold">
+                <a href="indexTest.html">Hotel Booking</a>
+            </div>
+            <nav class="flex space-x-4">
+                <a href="about-us.html" class="text-white hover:text-gray-300">About Us</a>
+                <a href="#" class="text-white hover:text-gray-300">Get 10% off on first Booking</a>
+            </nav>
+            <div>
+                <a href="online.html" class="text-white hover:text-gray-300">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container mx-auto flex flex-col items-center">
+            <h1>Find the Best Hotel</h1>
+            <p class="mt-4">Explore exclusive deals and book your next stay at unbeatable prices.</p>
+            <form id="searchForm" class="mt-6 flex space-x-2">
+                <input type="text" id="destinationInput" placeholder="Destination" class="text-blacks rounded-l-md focus:outline-none">
+                <input type="date" id="Check-inDate" placeholder="Check-in" class="text-black focus:outline-none">
+                <input type="date" class="text-black focus:outline-none">
+                <input type="number" placeholder="Guests" class="text-black rounded-r-md focus:outline-none">
+                <button type="button" id="searchButton" class="px-4 py-2 bg-blue-600 text-black rounded hover:bg-blue-500">Search</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <!-- Featured Hotels Section -->
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Featured Hotels</h2>
+            <div id="hotelContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Hotel Cards -->
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Kathmandu">
+                    <img src="1.png" alt="Hyatt Regency" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">
+                        <a href="hotel-detail.html" class="text-blue-600 hover:underline">Hyatt Regency</a>
+                    </h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="text-blue-500 ml-2">4.5/5</span>
+                        <span class="text-gray-600 ml-2">(128 reviews)</span>
+                    </div>
+                    <p>Kathmandu</p>
+                    <p class="text-xl font-bold">From Rs5000</p>
+                </div>
+        
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Kathmandu">
+                    <img src="12.jpg" alt="Holiday Inn Express & Suites" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">
+                        <a href="2ndhotel.html" class="text-blue-600 hover:underline"> Regency</a>
+                    </h3>
+                    </h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★★</span>
+                        <span class="text-blue-500 ml-2">4.5/5</span>
+                        <span class="text-gray-600 ml-2">(41 reviews)</span>
+                    </div>
+                    <p>Kathmandu</p>
+                    <p class="text-xl font-bold text-red-500">Special Discount</p>
+                    <p class="text-xl font-bold"><s>Rs2000</s></p>
+                    <p class="text-xl font-bold">Rs1250</p>
+                </div>
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Lalitpur">
+                    <img src="1253.jpeg" alt="Cady Inn Express & Suites" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <a href="3.html" class="text-blue-600 hover:underline"> Cady Inn Express & Suites</a>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★</span>
+                        <span class="text-blue-500 ml-2">4.8/5</span>
+                        <span class="text-gray-600 ml-2">(120 reviews)</span>
+                    </div>
+                    <p>Lalitpur</p>
+                    <p class="text-xl font-bold">From Rs2500</p>
+                </div>
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Kathmandu">
+                    <img src="124.jpg" alt="Anjee Suites" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Anjee Suites</h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★★</span>
+                        <span class="text-blue-500 ml-2">4.0/5</span>
+                        <span class="text-gray-600 ml-2">(150 reviews)</span>
+                    </div>
+                    <p>Kathmandu</p>
+                    <p class="text-xl font-bold">From Rs3000</p>
+                </div>
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Lalitpur">
+                    <img src="kathmandu.jpeg" alt="kathmandu Suites" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">kathmandu Suites</h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★★</span>
+                        <span class="text-blue-500 ml-2">4.2/5</span>
+                        <span class="text-gray-600 ml-2">(120 reviews)</span>
+                    </div>
+                    <p>Lalitpur</p>
+                    <p class="text-xl font-bold">From Rs2500</p>
+                </div>
+                <div class="hotel-card text-center border p-4 rounded-lg bg-white" data-location="Lalitpur">
+                    <img src="1.png" alt="Samantha Suites" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold">Samantha Suites</h3>
+                    <div class="flex items-center justify-center mb-2">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="text-blue-500 ml-2">4.5/5</span>
+                        <span class="text-gray-600 ml-2">(128 reviews)</span>
+                    </div>
+                    <p>Lalitpur</p>
+                    <p class="text-xl font-bold">From Rs5000</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Hotel Booking. All rights reserved.</p>
+        </div>
+        <div id="noHotelsMessage">
+            Sorry, not available.
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="skrt.js"></script>
+</body>
+</html>

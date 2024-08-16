@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyatt Regency - Hotel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="hotel-detail.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-blue-500 shadow">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-lg font-bold">
+                <a href="indexTest.html">Hotel Booking</a>
+            </div>
+            <nav class="flex space-x-4">
+                <a href="about-us.html" class="text-white hover:text-gray-300">About Us</a>
+                <a href="#" class="text-white hover:text-gray-300">Get 10% off on first Booking</a>
+            </nav>
+            <div>
+                <a href="online.html" class="text-white hover:text-gray-300">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hotel Detail Section -->
+    <section class="py-10">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-6 md:mb-0">
+                    <img src="12.jpg" alt="Hyatt Regency" class="w-full h-80 object-cover rounded-lg">
+                </div>
+                <div class="md:w-1/2 md:pl-6">
+                    <h1 class="text-3xl font-bold mb-4">Regency</h1>
+                    <p class="text-lg mb-4">Located in the heart of the city, Hyatt Regency offers luxurious rooms with stunning city views, exceptional dining options, and a relaxing spa.</p>
+                    <div class="flex items-center mb-4">
+                        <span class="text-yellow-500">★★★★★</span>
+                        <span class="text-blue-500 ml-2">4.5/5</span>
+                        <span class="text-gray-600 ml-2">(128 reviews)</span>
+                    </div>
+                    <p class="text-xl font-bold mb-4">Starting from Rs5000 per night</p>
+                    <p class="text-lg mb-4">Amenities: Free Wi-Fi, Swimming Pool, Spa, Restaurant, Spa, Garden </p>
+                    
+                    <!-- Booking Form -->
+                    <h2 class="text-2xl font-semibold mb-4">Reserve Your Stay</h2>
+                    <form id="reservationForm" class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label for="checkInDate" class="block text-lg font-semibold mb-2">Check-in Date</label>
+                            <input type="date" id="checkInDate" name="checkInDate" class="w-full px-4 py-2 border rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="checkOutDate" class="block text-lg font-semibold mb-2">Check-out Date</label>
+                            <input type="date" id="checkOutDate" name="checkOutDate" class="w-full px-4 py-2 border rounded-md" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="numberOfGuests" class="block text-lg font-semibold mb-2">Number of Guests</label>
+                            <input type="number" id="numberOfGuests" name="numberOfGuests" placeholder="Enter number of guests" class="w-full px-4 py-2 border rounded-md" required>
+                        </div>
+                        <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-500"onclick="window.location.href='hurry.html'">Book Now</button>
+                        <div id="reservationErrorMessage" class="text-red-500 mt-4" style="display: none;"></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Hotel Booking. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="hotel-detail.js"></script>
+</body>
+</html>

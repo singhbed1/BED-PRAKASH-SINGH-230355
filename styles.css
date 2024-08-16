@@ -1,0 +1,115 @@
+/* Custom styles for the Hero section */
+.hero-section {
+    background-image: url('https://source.unsplash.com/random/1200x600?travel');
+}
+
+/* General styles for the page */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles for the cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.card p {
+    margin-top: 0.25rem;
+    color: #4A5568;
+}
+.hero-section {
+    background-image: url('hero-back.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4f46e5, #3b82f6);
+}
+header a {
+    color: white;
+    transition: color 0.3s;
+}
+header a:hover {
+    color: #e5e7eb;
+}
+
+/* Hero Section */
+.hero-section {
+background-image: url('124.jpg'); /* Replace with your image path */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 400px; /* Adjust height as needed */
+display: flex;
+align-items: center;
+justify-content: center;
+color: white; /* Adjust text color for better readability */
+text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section p {
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section form input, .hero-section form button {
+    font-size: 1.1rem;
+    padding: 0.75rem;
+}
+.hero-section form button {
+    background-color: #2563eb;
+    transition: background-color 0.3s;
+}
+.hero-section form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Hotel Cards */
+.hotel-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.hotel-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hotel-card img {
+    transition: transform 0.3s;
+}
+.hotel-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+/* No Hotels Message */
+#noHotelsMessage {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

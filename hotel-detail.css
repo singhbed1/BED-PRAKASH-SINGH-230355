@@ -1,0 +1,28 @@
+/* Hotel Detail Page Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    margin-top: 2rem;
+}
+
+#reservationForm {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#reservationForm input,
+#reservationForm button {
+    margin-bottom: 1rem;
+}

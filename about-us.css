@@ -1,0 +1,17 @@
+/* About Us Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+footer {
+    margin-top: 2rem;
+}
